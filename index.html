@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Conversor de Unidades</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="http://www.wschronicle.com/wp-content/uploads/2017/09/money-680x365_c.jpg" type="image/x-icon">
+    <style>
+        h5 {
+            padding-top: 20px
+        }
+
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main container">
+        <h1 class="jumbotron">Conversor de Unidades
+            <br>
+            <small style="font-size: 0.5em">(Con Respecto al Peso Chileno)</small>
+        </h1>
+        <table class="table table-borderless table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Unidad de Medida </th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dólar</td>
+                    <td id="valor-dolar"></td>
+                </tr>
+                <tr>
+                    <td>Euro</td>
+                    <td id="valor-euro"></td>
+                </tr>
+                <tr>
+                    <td>UF</td>
+                    <td id="valor-uf"></td>
+                </tr>
+                <tr>
+                    <td>UTM</td>
+                    <td id="valor-utm"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="formulario jumbotron">
+            <form action="#">
+                <h4 style="padding: 20px">Conversión de Pesos Chilenos</h4>
+                <div style="padding-bottom: 20px">Pesos a Convertir:
+                    <input id="cantidad-1" type="number" required>
+                </div>
+                Unidad a Convertir:
+                <select name="unidades-a-convertir" id="unidades-a-convertir" required>
+                    <option value="Dólar">Dólar</option>
+                    <option value="Euro">Euro</option>
+                </select>
+                <div style="padding-top: 20px">
+                    <button type="submit" class="btn btn-dark" id="button-1">Convertir</button>
+                </div>
+            </form>
+            <div class="valor-convertido-1">
+                <h5></h5>
+            </div>
+        </div>
+        <div class="formulario-2 jumbotron">
+            <form action="#">
+                <h4 style="padding: 20px">Conversión a Pesos Chilenos</h4>
+                <div style="padding-bottom: 20px">Monto a Convertir:
+                    <input id="cantidad-2" type="number" required>
+                </div>
+                Unidad Base:
+                <select name="unidades-a-convertir-2" id="unidades-a-convertir-2" required>
+                    <option value="Dólar">Dólar</option>
+                    <option value="Euro">Euro</option>
+                </select>
+                <div style="padding-top: 20px">
+                    <button type="submit" class="btn btn-dark" id="button-2">Convertir</button>
+                </div>
+            </form>
+            <div class="valor-convertido-2">
+                <h5></h5>
+            </div>
+        </div>
+        <div class="formulario-3 jumbotron">
+                <form action="#">
+                    <h4 style="padding: 20px">Conversión desde Unidades Especiales</h4>
+                    <div style="padding-bottom: 20px">Monto a Convertir:
+                        <input id="cantidad-3" type="number" required>
+                    </div>
+                    Unidad Base:
+                    <select name="unidades-a-convertir-3" id="unidades-a-convertir-3" required>
+                        <option value="UF">UF</option>
+                        <option value="UTM">UTM</option>
+                    </select>
+                    <div style="padding-top: 20px">
+                        <button type="submit" class="btn btn-dark" id="button-3">Convertir</button>
+                    </div>
+                </form>
+                <div class="valor-convertido-3">
+                    <h5></h5>
+                </div>
+            </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <!-- My js -->
+    <script src="app.js"></script>
+</body>
+
+</html>
